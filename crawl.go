@@ -20,7 +20,7 @@ type config struct {
 }
 
 // crawlPage bfs crawls all internal links from baseURL. It retuns a map of urls to the number of times the url has been seen.
-// bfs, bc why not.
+// bfs-kinda, bc recursion hurts my brain.
 func (cfg *config) crawlPage() error {
 	queue := make(chan string, 1000)
 	queue <- cfg.baseURL.String() // init queue

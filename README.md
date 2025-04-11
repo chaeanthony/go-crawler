@@ -21,4 +21,5 @@ go run . <website> <maxConcurrency> <maxPages>
 ```
 
 maxConcurrency = number of workers to concurrently search
+
 maxPages = set number of pages desired to process
